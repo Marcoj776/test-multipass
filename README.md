@@ -9,6 +9,9 @@
 
 # Installation
 Just `npm install`
+h2 login - select avicii-dev
+h2 link - select the hydrogen storefront
+h2 env pull - get the env vars
 
 # Hydrogen example: Multipass
 
