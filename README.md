@@ -1,3 +1,12 @@
+# Installation and setup steps
+- visit my [ngrok tunnel](https://heavily-sensible-stork.ngrok-free.app/)
+- go to /account/login/multipass to redirect to account.nothing.tech with the URL params as I've set them in account_.login.multipass.tsx
+- fill in teh login process
+  - Expected behaviour: a POST request is made to /account/login/multipass, with the multipass token, then the user is redirected to /account, logged in
+  - Actual behaviour:
+    - via the login form: the user is logged into the nothing community
+    - via the Google OAuth: a GET request is made to /account/login/multipass/<MULTIPASS_TOKEN>, which does nothing
+
 # Hydrogen example: Multipass
 
 This folder contains an example implementation of [Multipass](https://shopify.dev/docs/api/multipass) for Hydrogen. It shows how to persist
