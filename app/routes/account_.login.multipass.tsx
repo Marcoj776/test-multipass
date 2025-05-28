@@ -23,6 +23,16 @@ export async function loader({params, context}: LoaderFunctionArgs) {
   if (customerAccessToken) {
     return redirect(params.lang ? `${params.lang}/account` : '/account');
   }
+
+  const nothingAccountTechParams = {
+    source: "store",
+    store: "avicii-dev",
+    callback: "https://heavily-sensible-stork.ngrok-free.app/account/login",
+    return_to: "https://heavily-sensible-stork.ngrok-free.app/account",
+  };
+  const searchParams = new URLSearchParams(nothingAccountTechParams);
+  return redirect(`https://account.nothing.tech?${searchParams.toString()}`);
+
   return redirect(params.lang ? `${params.lang}/account` : '/account/login');
 }
 
