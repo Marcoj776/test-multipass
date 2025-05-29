@@ -8,10 +8,10 @@
     - via the Google OAuth: a GET request is made to /account/login/multipass/<MULTIPASS_TOKEN>, which does nothing
 
 # Installation
-Just `npm install`
-h2 login - select avicii-dev
-h2 link - select the hydrogen storefront
-h2 env pull - get the env vars
+- `npm install`
+- h2 login - select avicii-dev
+- h2 link - select the hydrogen storefront
+- h2 env pull - get the env vars
 
 # Hydrogen example: Multipass
 
